@@ -9,5 +9,6 @@ package uniajc.model;
  * @author juana
  */
 public class Estudiante {
-    
+    private String nombre;
+    private int edad;
 }
