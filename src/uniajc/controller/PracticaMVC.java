@@ -4,6 +4,9 @@
  */
 package uniajc.controller;
 
+import uniajc.model.Estudiante;
+import uniajc.view.VistaEstudiante;
+
 /**
  *
  * @author g.perezmoreno
@@ -15,6 +18,27 @@ public class PracticaMVC {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        // Crear modelo
+        Estudiante estudiante = new Estudiante();
+        estudiante.setNombre("Ana");
+        estudiante.setEdad(21);
+        
+         // Crear vista
+        VistaEstudiante vista = new VistaEstudiante();
+        
+        // Crear controlador
+        ControladorEstudiante controlador = new ControladorEstudiante(estudiante, vista);
+
+        // Mostrar datos iniciales
+        controlador.actualizarVista();
+        
+        // Modificar datos a través del controlador
+        controlador.setNombreEstudiante("Carlos");
+        controlador.setEdadEstudiante(23);
+        
+        // Actualizar la vista
+        controlador.actualizarVista();
     }
     
 }
