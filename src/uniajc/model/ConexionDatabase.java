@@ -4,9 +4,12 @@
  */
 package uniajc.model;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Properties;
 
 /**
  *
@@ -19,14 +22,19 @@ public class ConexionDatabase {
     public static Connection getConnection() {
         if (conexion == null) {      
             try {
-                String url = "jdbc:mysql://localhost:3306/escuela";
-                String user = "root";
-                String password = "admin";
+                
+                Properties props = new Properties();
+                
+                props.load(new FileInputStream("db.properties"));
+                
+                String url = props.getProperty("db.url");
+                String user = props.getProperty("db.user");
+                String password = props.getProperty("db.password");
 
                 conexion = DriverManager.getConnection(url, user, password);
                 System.out.println("Conexion exitosa!");
                 System.out.println("");
-            } catch (SQLException error){
+            } catch (SQLException | IOException error){
                 System.out.println("Error conectando a la base de datos: " + error);
             }   
         }
