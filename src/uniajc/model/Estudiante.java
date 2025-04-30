@@ -41,13 +41,23 @@ public class Estudiante {
             
             statement.setString(1, nuevoEstudiante.getNombre());
             statement.setInt(2, nuevoEstudiante.getEdad());
-                     
+                
+            // INSERT, UPDATE, DELETE
             statement.executeUpdate();
+            
+            // SELECT
+            // statement.executeQuery();
                     
         } catch (Exception exception) {
             exception.printStackTrace();
         }
         
     }
+    
+    // CRUD - Practica en casa
+    // 1. Crear metodo consultar todos los estudiantes // SELECT
+    // 2. Crear metodo consultar estudiante por id // SELECT
+    // 3. Elimnar un estudiante por id // DELETE
+    // 4. Actualizar nombre de estudiante por id // UPDATE
     
 }

@@ -41,6 +41,12 @@ public class ControladorEstudiante {
         System.out.println("Nuevo estudiante guardado exitosamente!");
     }
     
+    // CRUD - Practica en casa
+    // 1. Crear metodo consultar todos los estudiantes // SELECT
+    // 2. Crear metodo consultar estudiante por id // SELECT
+    // 3. Elimnar un estudiante por id // DELETE
+    // 4. Actualizar nombre de estudiante por id // UPDATE
+    
     public void actualizarVista() {
         vista.mostrarDetallesEstudiante(modelo.getNombre(), modelo.getEdad());
     }
