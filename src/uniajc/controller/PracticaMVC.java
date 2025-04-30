@@ -4,6 +4,7 @@
  */
 package uniajc.controller;
 
+import uniajc.model.ConexionDatabase;
 import uniajc.model.Estudiante;
 import uniajc.view.VistaEstudiante;
 
@@ -18,6 +19,8 @@ public class PracticaMVC {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        ConexionDatabase.getConnection();
         
         // Crear modelo
         Estudiante estudiante = new Estudiante();
