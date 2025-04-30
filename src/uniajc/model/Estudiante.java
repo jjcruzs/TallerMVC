@@ -4,6 +4,9 @@
  */
 package uniajc.model;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
 /**
  *
  * @author juana
@@ -28,5 +31,23 @@ public class Estudiante {
         this.edad = edad;
     }
     
+    public static void guardarEstudiante(Estudiante nuevoEstudiante) {
+        
+        Connection conexion = ConexionDatabase.getConnection();
+        
+        String sql = "INSERT INTO estudiante (nombre, edad) VALUES (?, ?)";
+        
+        try (PreparedStatement statement = conexion.prepareStatement(sql)) {
+            
+            statement.setString(1, nuevoEstudiante.getNombre());
+            statement.setInt(2, nuevoEstudiante.getEdad());
+                     
+            statement.executeUpdate();
+                    
+        } catch (Exception exception) {
+            exception.printStackTrace();
+        }
+        
+    }
     
 }

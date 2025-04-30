@@ -18,10 +18,7 @@ public class PracticaMVC {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        
-        ConexionDatabase.getConnection();
-        
+           
         // Crear modelo
         Estudiante estudiante = new Estudiante();
         estudiante.setNombre("Ana");
@@ -33,6 +30,12 @@ public class PracticaMVC {
         // Crear controlador
         ControladorEstudiante controlador = new ControladorEstudiante(estudiante, vista);
 
+        Estudiante nuevoEstudiante = new Estudiante();
+        nuevoEstudiante.setNombre("Jose Maria");
+        nuevoEstudiante.setEdad(45);
+        
+        controlador.crearEstudiante(nuevoEstudiante);
+        
         // Mostrar datos iniciales
         controlador.actualizarVista();
         
