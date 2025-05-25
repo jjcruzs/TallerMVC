@@ -11,6 +11,6 @@ public class ControladorPrincipal {
         vista.itemEstudiantes.addActionListener(e -> new PanelEstudiantes());
         vista.itemDocentes.addActionListener(e -> new PanelDocentes());
         vista.itemCursos.addActionListener(e -> new PanelCursos());
-        vista.itemMatricula.addActionListener(e -> new PanelMatricula());
+        vista.itemMatricula.addActionListener(e -> new PanelMatricula());  
     }
 }

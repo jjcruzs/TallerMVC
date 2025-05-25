@@ -12,6 +12,6 @@ public class PanelCursos extends JFrame {
         lbl.setBounds(60, 50, 200, 30);
         add(lbl);
 
-        setVisible(true);
+        setVisible(true);  
     }
 }
