@@ -13,5 +13,5 @@ public class PanelDocentes extends JFrame {
         add(lbl);
 
         setVisible(true);
-    }  
+    }    
 }

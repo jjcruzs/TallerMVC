@@ -9,6 +9,6 @@ package uniajc.model;
  *
  * @author Luis Fernando
  */
-public class ConexionBaseDatos {
+public class ConexionBaseDatos { 
 
 }

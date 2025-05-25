@@ -18,7 +18,7 @@ public class VistaPrincipalGUI extends JFrame {
 
         itemEstudiantes = new JMenuItem("Estudiantes");
         itemDocentes = new JMenuItem("Docentes");
-        itemCursos = new JMenuItem("Cursos");
+        itemCursos = new JMenuItem("Cursos"); 
         itemMatricula = new JMenuItem("Matrícula");
 
         menu.add(itemEstudiantes);

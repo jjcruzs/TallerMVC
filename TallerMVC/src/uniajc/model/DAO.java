@@ -15,7 +15,7 @@ public class DAO {
                 lista.add(new Estudiante(rs.getInt("cod_estudiante"), rs.getString("nom_estudiante")));
             }
 
-        } catch (SQLException e) {
+        } catch (SQLException e) { 
             e.printStackTrace();
         }
         return lista;

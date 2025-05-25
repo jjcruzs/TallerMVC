@@ -13,5 +13,5 @@ public class Matricula {
 
     public int getCodEstudiante() { return codEstudiante; }
     public int getCodCurso() { return codCurso; }
-    public float getNota() { return nota; }  
+    public float getNota() { return nota; }    
 }

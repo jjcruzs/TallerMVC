@@ -14,6 +14,6 @@ public class PanelMatricula extends JFrame {
 
         setVisible(true);
         
-          
+            
     }
 }

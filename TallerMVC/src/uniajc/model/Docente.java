@@ -10,5 +10,5 @@ public class Docente {
     }
 
     public int getCodDocente() { return codDocente; }
-    public String getNomDocente() { return nomDocente; }  
+    public String getNomDocente() { return nomDocente; }   
 }
