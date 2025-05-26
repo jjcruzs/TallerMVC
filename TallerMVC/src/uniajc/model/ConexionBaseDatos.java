@@ -1,14 +1,27 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
 package uniajc.model;
 
-/**
- *
- * @author Luis Fernando
- */
-public class ConexionBaseDatos { 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
+public class ConexionBaseDatos {
+
+    private static final String URL = "jdbc:mysql://127.0.0.1:3306/taller_mvc";
+    private static final String USER = "root";
+    private static final String PASSWORD = "juanjose0214";
+
+    public static Connection conectar() {
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection con = DriverManager.getConnection(URL, USER, PASSWORD);
+            System.out.println("Conexión exitosa a la base de datos.");
+            return con;
+        } catch (ClassNotFoundException e) {
+            System.out.println("Error: Driver JDBC no encontrado.");
+            e.printStackTrace();
+        } catch (SQLException e) {
+            System.out.println("Error de conexión a MySQL: " + e.getMessage());
+        }
+        return null;
+    }
 }

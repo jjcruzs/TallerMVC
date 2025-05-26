@@ -1,6 +1,7 @@
 package uniajc.model;
 
 public class Estudiante {
+
     private int codEstudiante;
     private String nomEstudiante;
 
@@ -9,11 +10,16 @@ public class Estudiante {
         this.nomEstudiante = nomEstudiante;
     }
 
-    public int getCodEstudiante() { return codEstudiante; }
-    public String getNomEstudiante() { return nomEstudiante; }
+    public int getCodEstudiante() {
+        return codEstudiante;
+    }
+
+    public String getNomEstudiante() {
+        return nomEstudiante;
+    }
 
     @Override
     public String toString() {
-        return nomEstudiante;    
+        return nomEstudiante;
     }
 }

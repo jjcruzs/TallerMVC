@@ -1,12 +1,12 @@
 package uniajc.model;
 
-public class Matricula {
+public class Calificaciones {
 
     private int codEstudiante;
     private int codCurso;
     private float nota;
 
-    public Matricula(int codEstudiante, int codCurso, float nota) {
+    public Calificaciones(int codEstudiante, int codCurso, float nota) {
         this.codEstudiante = codEstudiante;
         this.codCurso = codCurso;
         this.nota = nota;
@@ -22,9 +22,5 @@ public class Matricula {
 
     public float getNota() {
         return nota;
-    }
-
-    public void setNota(float nota) {
-        this.nota = nota;
     }
 }
