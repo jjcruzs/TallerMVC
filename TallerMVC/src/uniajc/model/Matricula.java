@@ -9,7 +9,7 @@ public class Matricula {
     public Matricula(int codEstudiante, int codCurso, float nota) {
         this.codEstudiante = codEstudiante;
         this.codCurso = codCurso;
-        this.nota = nota; 
+        this.nota = nota;
     }
 
     public int getCodEstudiante() {

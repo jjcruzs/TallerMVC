@@ -9,7 +9,7 @@ public class GestorDeDatos {
         try (Connection con = ConexionBaseDatos.conectar(); PreparedStatement stmt = con.prepareStatement("INSERT INTO estudiantes VALUES (?, ?)")) {
             stmt.setInt(1, e.getCodEstudiante());
             stmt.setString(2, e.getNomEstudiante());
-            stmt.executeUpdate();
+            stmt.executeUpdate(); 
         } catch (SQLException ex) { 
             ex.printStackTrace();
         }
