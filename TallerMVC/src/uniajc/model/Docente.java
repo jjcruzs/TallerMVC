@@ -7,11 +7,11 @@ public class Docente {
 
     public Docente(int codDocente, String nomDocente) {
         this.codDocente = codDocente;
-        this.nomDocente = nomDocente;
+        this.nomDocente = nomDocente; 
     }
 
     public int getCodDocente() {
-        return codDocente;
+        return codDocente; 
     }
 
     public String getNomDocente() {

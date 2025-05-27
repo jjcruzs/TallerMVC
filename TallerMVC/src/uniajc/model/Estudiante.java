@@ -7,7 +7,7 @@ public class Estudiante {
 
     public Estudiante(int codEstudiante, String nomEstudiante) {
         this.codEstudiante = codEstudiante;
-        this.nomEstudiante = nomEstudiante;
+        this.nomEstudiante = nomEstudiante; 
     }
 
     public int getCodEstudiante() {

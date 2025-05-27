@@ -4,15 +4,15 @@ import java.awt.Color;
 import java.awt.Font;
 import javax.swing.*;
 
-public class VistaPrincipalGUI extends JFrame {
+public class VistaPrincipal extends JFrame {
 
     public JMenu menuCalificaciones, menuListado, menuMatricula;
     public JMenuItem itemEstudiantes, itemDocentes, itemCursos;
 
-    public VistaPrincipalGUI() {
+    public VistaPrincipal() {
         setTitle("Sistema Escolar");
         setSize(500, 400);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
         setLayout(null);
 
         JLabel titulo = new JLabel("Sistema Escolar");

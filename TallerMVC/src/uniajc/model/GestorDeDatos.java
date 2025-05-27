@@ -10,7 +10,7 @@ public class GestorDeDatos {
             stmt.setInt(1, e.getCodEstudiante());
             stmt.setString(2, e.getNomEstudiante());
             stmt.executeUpdate();
-        } catch (SQLException ex) {
+        } catch (SQLException ex) { 
             ex.printStackTrace();
         }
     }

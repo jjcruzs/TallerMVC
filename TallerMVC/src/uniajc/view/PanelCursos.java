@@ -12,7 +12,7 @@ public class PanelCursos extends JFrame {
     private JTextField txtCodigo;
     private JTextField txtNombre;
     private JComboBox<Docente> comboDocente;
-    private JButton btnGuardar;
+    private JButton btnGuardar; 
 
     public PanelCursos() {
         setTitle("Registro de Cursos");

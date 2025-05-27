@@ -12,7 +12,7 @@ public class PanelDocentes extends JFrame {
     private JTextField txtNombre;
     private JButton btnGuardar;
 
-    public PanelDocentes() {
+    public PanelDocentes() { 
         setTitle("Registro de Docentes");
         setSize(400, 200);
         setLayout(null);

@@ -6,7 +6,7 @@ public class Calificaciones {
     private int codCurso;
     private float nota;
 
-    public Calificaciones(int codEstudiante, int codCurso, float nota) {
+    public Calificaciones(int codEstudiante, int codCurso, float nota) { 
         this.codEstudiante = codEstudiante;
         this.codCurso = codCurso;
         this.nota = nota;

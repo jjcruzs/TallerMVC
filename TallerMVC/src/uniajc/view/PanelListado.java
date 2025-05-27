@@ -14,7 +14,7 @@ public class PanelListado extends JFrame {
     private JButton btnActualizar, btnEliminar;
 
     public PanelListado() {
-        setTitle("Listado de Matrículas");
+        setTitle("Listado de Matrículas"); 
         setSize(700, 450);
         setLayout(new BorderLayout());
         setLocationRelativeTo(null);

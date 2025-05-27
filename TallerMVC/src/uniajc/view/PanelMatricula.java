@@ -15,7 +15,7 @@ public class PanelMatricula extends JFrame {
     private JButton btnRegistrar, btnLimpiar;
 
     public PanelMatricula() {
-        setTitle("Registrar Matrícula");
+        setTitle("Registrar Matrícula"); 
         setSize(400, 300);
         setLayout(null);
         setLocationRelativeTo(null);

@@ -4,11 +4,11 @@ import uniajc.view.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-public class ControladorPrincipal {
+public class ControladorPrincipal {  
 
-    private VistaPrincipalGUI vista;
+    private VistaPrincipal vista;
 
-    public ControladorPrincipal(VistaPrincipalGUI vista) {
+    public ControladorPrincipal(VistaPrincipal vista) {
         this.vista = vista;
 
         vista.itemEstudiantes.addActionListener(e -> {

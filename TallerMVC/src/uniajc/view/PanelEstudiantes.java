@@ -13,7 +13,7 @@ public class PanelEstudiantes extends JFrame {
     private JButton btnGuardar;
 
     public PanelEstudiantes() {
-        setTitle("Registro de Estudiantes");
+        setTitle("Registro de Estudiantes"); 
         setSize(400, 200);
         setLayout(null);
         JLabel titulo = new JLabel("Estudiante");
